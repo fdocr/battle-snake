@@ -10,11 +10,11 @@ use Rack::PostBodyContentTypeParser
 # TIP: If you open your Battlesnake URL in browser you should see this data
 get '/' do
   appearance = {
-    apiversion: "1",        
-    author: "",           # TODO: Your Battlesnake Username
-    color: "#888888",     # TODO: Personalize
-    head: "default",      # TODO: Personalize
-    tail: "default",      # TODO: Personalize
+    apiversion: "1",
+    author: "Pinky.py",           # TODO: Your Battlesnake Username
+    color: "#DA00CB",     # TODO: Personalize
+    head: "silly",      # TODO: Personalize
+    tail: "bolt",      # TODO: Personalize
   }
 
   camelcase(appearance).to_json
